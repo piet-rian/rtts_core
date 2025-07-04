@@ -93,7 +93,15 @@
       <WorkTableWorkSpeedFactor>7.0</WorkTableWorkSpeedFactor>
     </statBases>
     <recipes>
-      <!-- TODO: 星に還すレシピ -->
+      <!-- memo. RecipeDef には `recipeUsers` は無いので、逐一追加する必要あり -->
+      <li>RTTS_HUMANLIKE_RETURN_TO_A_STAR_1x</li>
+      <li>RTTS_HUMANLIKE_RETURN_TO_A_STAR_3x</li>
+      <li>RTTS_HUMANLIKE_RETURN_TO_A_STAR_5x</li>
+      <li>RTTS_HUMANLIKE_RETURN_TO_A_STAR_7x</li>
+      <li>RTTS_ANIMAL_RETURN_TO_A_STAR_1x</li>
+      <li>RTTS_ANIMAL_RETURN_TO_A_STAR_3x</li>
+      <li>RTTS_ANIMAL_RETURN_TO_A_STAR_5x</li>
+      <li>RTTS_ANIMAL_RETURN_TO_A_STAR_7x</li>
     </recipes>
     <researchPrerequisites>
       <li>RTTS_RESEARCH_PROJECT_1T</li>

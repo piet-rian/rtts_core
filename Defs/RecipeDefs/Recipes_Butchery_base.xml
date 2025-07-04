@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+	<!-- 星に還す `return to a star` ためのレシピ定義 -->
+
+	<!-- ワークタイプの定義 -->
+	<WorkGiverDef>
+		<defName>DoBillsReturnToAStar</defName>
+		<label>do somethings at star circle</label>
+		<giverClass>WorkGiver_DoBill</giverClass>
+		<workType>Art</workType> <!-- 作業タイプは芸術 -->
+		<priorityInType>105</priorityInType> <!-- ワークタイプ内での優先度なのだがだいぶ適当 -->
+		<fixedBillGiverDefs>
+			<li>RTTS_STAR_CIRCLE</li>
+		</fixedBillGiverDefs>
+		<verb> working at</verb>
+		<gerund> working at</gerund>
+		<requiredCapacities>
+			<li>Manipulation</li>
+		</requiredCapacities>
+		<prioritizeSustains>true</prioritizeSustains>
+	</WorkGiverDef>
+
+	<!-- 変換レシピそのものベース -->
+	<RecipeDef Name="RTTS_RETURN_TO_A_STAR" Abstract="True">
+		<jobString>returning it to a star.</jobString>
+		<effectWorking>Cremate</effectWorking> <!-- 実質的にアイテムも手に入る火葬場なので火葬場エフェクト指定 -->
+		<soundWorking>Recipe_Cremate</soundWorking> <!-- 作業音についても同じ -->
+		<targetCountAdjustment>20</targetCountAdjustment>
+		<workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+		<workSkill>Artistic</workSkill> <!-- レシピは芸術関連の括りにいれる -->
+		<autoStripCorpses>false</autoStripCorpses> <!-- 服ごと星に還す -->
+	</RecipeDef>
+
+	<!-- 人用のレシピのベース -->
+	<RecipeDef Abstract="True"
+		Name="RTTS_HUMANLIKE_RETURN_TO_A_STAR" ParentName="RTTS_RETURN_TO_A_STAR">
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesHumanlike</li>
+			</categories>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<thingDefs>
+				<li>Corpse_Human</li>
+			</thingDefs>
+			<specialFiltersToAllow>
+				<li>AllowCorpsesColonist</li>
+				<li>AllowCorpsesStranger</li>
+				<li>AllowCorpsesSlave</li>
+			</specialFiltersToAllow>
+		</defaultIngredientFilter>
+	</RecipeDef>
+
+	<!-- 動物用レシピのベース -->
+	<RecipeDef Abstract="True"
+		Name="RTTS_ANIMAL_RETURN_TO_A_STAR" ParentName="RTTS_RETURN_TO_A_STAR">
+		<fixedIngredientFilter>
+			<categories>
+				<li>CorpsesAnimal</li>
+			</categories>
+			<specialFiltersToDisallow>
+				<li>AllowFresh</li>
+			</specialFiltersToDisallow>
+		</fixedIngredientFilter>
+		<defaultIngredientFilter>
+			<categories>
+				<li>CorpsesAnimal</li>
+			</categories>
+		</defaultIngredientFilter>
+	</RecipeDef>
+
+	<!--
+		実レシピ定義は別途行う
+		- レシピによる変換においては、同じ遺骸であっても人間のほうが一体当たりの星のかけらの量が多くなるようにする
+		- 技術開放によってより作業効率の良いレシピが追加される方式とする
+			- 例: x1, x3, x5, x7 など
+	-->
+</Defs>

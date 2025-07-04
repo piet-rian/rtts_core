@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 人用レシピ(x1, x3, x5, x7) 実定義 -->
+
+    <RecipeDef ParentName="RTTS_HUMANLIKE_RETURN_TO_A_STAR">
+        <defName>RTTS_HUMANLIKE_RETURN_TO_A_STAR_1x</defName>
+        <label>return to a star(x1)(humanlike)</label>
+        <description>Return a corpse to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <workAmount>200</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>20</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RTTS_HUMANLIKE_RETURN_TO_A_STAR">
+        <defName>RTTS_HUMANLIKE_RETURN_TO_A_STAR_3x</defName>
+        <label>return to a star(x3)(humanlike)</label>
+        <description>Return corpse(s) to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <workAmount>600</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>60</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+            <li>Machining</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RTTS_HUMANLIKE_RETURN_TO_A_STAR">
+        <defName>RTTS_HUMANLIKE_RETURN_TO_A_STAR_5x</defName>
+        <label>return to a star(x5)(humanlike)</label>
+        <description>Return corpse(s) to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <workAmount>1000</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>100</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+            <li>MicroelectronicsBasics</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RTTS_HUMANLIKE_RETURN_TO_A_STAR">
+        <defName>RTTS_HUMANLIKE_RETURN_TO_A_STAR_7x</defName>
+        <label>return to a star(x7)(humanlike)</label>
+        <description>Return corpse(s) to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>Corpses</li>
+                    </categories>
+                </filter>
+                <count>7</count>
+            </li>
+        </ingredients>
+        <workAmount>1400</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>140</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+            <li>ShipBasics</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+</Defs>

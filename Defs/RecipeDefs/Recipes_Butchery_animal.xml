@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+    <!-- 動物用レシピ(x1, x3, x5, x7) 実定義 -->
+    <RecipeDef ParentName="RTTS_ANIMAL_RETURN_TO_A_STAR">
+        <defName>RTTS_ANIMAL_RETURN_TO_A_STAR_1x</defName>
+        <label>return to a star(x1)(animal)</label>
+        <description>Return a corpse to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>CorpsesAnimal</li>
+                    </categories>
+                </filter>
+                <count>1</count>
+            </li>
+        </ingredients>
+        <workAmount>100</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>5</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+
+    <RecipeDef ParentName="RTTS_ANIMAL_RETURN_TO_A_STAR">
+        <defName>RTTS_ANIMAL_RETURN_TO_A_STAR_3x</defName>
+        <label>return to a star(x3)(animal)</label>
+        <description>Return corpse(s) to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>CorpsesAnimal</li>
+                    </categories>
+                </filter>
+                <count>3</count>
+            </li>
+        </ingredients>
+        <workAmount>300</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>15</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+            <li>Machining</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RTTS_ANIMAL_RETURN_TO_A_STAR">
+        <defName>RTTS_ANIMAL_RETURN_TO_A_STAR_5x</defName>
+        <label>return to a star(x5)(animal)</label>
+        <description>Return corpse(s) to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>CorpsesAnimal</li>
+                    </categories>
+                </filter>
+                <count>5</count>
+            </li>
+        </ingredients>
+        <workAmount>500</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>25</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+            <li>MicroelectronicsBasics</li>
+        </researchPrerequisites>
+    </RecipeDef>
+
+    <RecipeDef ParentName="RTTS_ANIMAL_RETURN_TO_A_STAR">
+        <defName>RTTS_ANIMAL_RETURN_TO_A_STAR_7x</defName>
+        <label>return to a star(x7)(animal)</label>
+        <description>Return corpse(s) to a star.</description>
+        <ingredients>
+            <li>
+                <filter>
+                    <categories>
+                        <li>CorpsesAnimal</li>
+                    </categories>
+                </filter>
+                <count>7</count>
+            </li>
+        </ingredients>
+        <workAmount>700</workAmount>
+        <products>
+            <RTTS_STAR_PIECE>35</RTTS_STAR_PIECE>
+        </products>
+        <researchPrerequisites>
+            <li>RTTS_RESEARCH_PROJECT_1T</li>
+            <li>ShipBasics</li>
+        </researchPrerequisites>
+    </RecipeDef>
+</Defs>
