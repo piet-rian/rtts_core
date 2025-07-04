@@ -8,8 +8,8 @@
     テックレベルの情報は `Core\Languages\English\Keyed\Enums.xml` の TechLevel の部分を参照
   -->
   <ResearchProjectDef>
-    <defName>RTAS_RESEARCH_PROJECT_1T</defName>
-    <label>Return th a star</label>
+    <defName>RTTS_RESEARCH_PROJECT_1T</defName>
+    <label>Return to the star</label>
     <description>welcome to this world.</description>
     <baseCost>7777777</baseCost>
     <techLevel>Animal</techLevel>
