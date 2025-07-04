@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: return to a star(x1)(animal) -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_1x.label>星へ還す（x1）（動物）</RTTS_ANIMAL_RETURN_TO_A_STAR_1x.label>
+  <!-- EN: Return a corpse to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_1x.description>遺体を星へ還す。</RTTS_ANIMAL_RETURN_TO_A_STAR_1x.description>
+  <!-- EN: returning it to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_1x.jobString>星へ還している。</RTTS_ANIMAL_RETURN_TO_A_STAR_1x.jobString>
+
+  <!-- EN: return to a star(x3)(animal) -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_3x.label>星へ還す（x3）（動物）</RTTS_ANIMAL_RETURN_TO_A_STAR_3x.label>
+  <!-- EN: Return corpse(s) to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_3x.description>複数の遺体を星へ還す。</RTTS_ANIMAL_RETURN_TO_A_STAR_3x.description>
+  <!-- EN: returning it to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_3x.jobString>星へ還している。</RTTS_ANIMAL_RETURN_TO_A_STAR_3x.jobString>
+
+  <!-- EN: return to a star(x5)(animal) -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_5x.label>星へ還す（x5）（動物）</RTTS_ANIMAL_RETURN_TO_A_STAR_5x.label>
+  <!-- EN: Return corpse(s) to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_5x.description>複数の遺体を星へ還す。</RTTS_ANIMAL_RETURN_TO_A_STAR_5x.description>
+  <!-- EN: returning it to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_5x.jobString>星へ還している。</RTTS_ANIMAL_RETURN_TO_A_STAR_5x.jobString>
+
+  <!-- EN: return to a star(x7)(animal) -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_7x.label>星へ還す（x7）（動物）</RTTS_ANIMAL_RETURN_TO_A_STAR_7x.label>
+  <!-- EN: Return corpse(s) to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_7x.description>複数の遺体を星へ還す。</RTTS_ANIMAL_RETURN_TO_A_STAR_7x.description>
+  <!-- EN: returning it to a star. -->
+  <RTTS_ANIMAL_RETURN_TO_A_STAR_7x.jobString>星へ還している。</RTTS_ANIMAL_RETURN_TO_A_STAR_7x.jobString>
+
+</LanguageData>

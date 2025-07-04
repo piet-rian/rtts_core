@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: administer "When You Wish upon a Star" -->
+  <AdministerRTTS_HEALER.label>「星に願いを」を投与</AdministerRTTS_HEALER.label>
+  <!-- EN: Administer a "When You Wish upon a Star". -->
+  <AdministerRTTS_HEALER.description>「星に願いを」を投与する。</AdministerRTTS_HEALER.description>
+  <!-- EN: Administering "When You Wish upon a Star". -->
+  <AdministerRTTS_HEALER.jobString>「星に願いを」を投与中。</AdministerRTTS_HEALER.jobString>
+
+</LanguageData>

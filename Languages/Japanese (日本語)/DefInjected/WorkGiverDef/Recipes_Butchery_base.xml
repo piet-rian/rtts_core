@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: do somethings at star circle -->
+  <DoBillsReturnToAStar.label>星堂で作業を行う</DoBillsReturnToAStar.label>
+  <!-- EN:  working at -->
+  <DoBillsReturnToAStar.gerund>作業中</DoBillsReturnToAStar.gerund>
+  <!-- EN:  working at -->
+  <DoBillsReturnToAStar.verb>作業中</DoBillsReturnToAStar.verb>
+
+</LanguageData>

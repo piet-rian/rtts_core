@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: When You Wish upon a Star -->
+  <RTTS_HEALER.label>星に願いを</RTTS_HEALER.label>
+  <!-- EN: like a healer mech serum. -->
+  <RTTS_HEALER.description>星の欠片をぎゅっとあつめて飲み物にしました。ぐっと飲むとヒーラーシーラムのように体が治ります。</RTTS_HEALER.description>
+  <!-- EN: Use {0_label} -->
+  <RTTS_HEALER.comps.CompUsable.useLabel>{0_label}を使用</RTTS_HEALER.comps.CompUsable.useLabel>
+
+</LanguageData>
