@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ModMetaData>
 
-    <!-- see. https://rimworldwiki.com/wiki/Modding_Tutorials/About.xml -->
+    <packageId>piet.rian.rtts.core</packageId>
+    <name>Rerurn to The Star - core</name>
+    <authors>
+        <li>piet-rian</li>
+    </authors>
+    <description>
+        It is a mod that aims to provide a versatile means of disposing of remains.
+    </description>
+    <supportedVersions>
+        <li>1.6</li>
+    </supportedVersions>
+
+    <modVersion>1.0</modVersion>
+    <url>https://github.com/piet-rian/rtts_core</url>
+
+    <loadAfter>
+        <li>ludeon.rimworld</li>
+    </loadAfter>
 
 </ModMetaData>
