@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    * 本Modのキーアイテムととなる `star piece`(星のかけら) の定義
+    * 遺骸やその他のアイテムを変換することで入手する
+    * このアイテムを元に他のアイテムを生成する
+  -->
+
+  <!-- Parent を ResourceBase とすることで `物品/その他` 扱いになる  -->
+  <!-- `原材料` カテゴリに入れると意図しないルートで使われる可能性がある -->
+  <ThingDef ParentName="ResourceBase">
+    <defName>RTTS_STAR_PIECE</defName>
+    <label>star piece</label>
+    <description>stardust</description><!-- TODO: 文面考え直す -->
+    <statBases>
+      <MaxHitPoints>50</MaxHitPoints>
+      <Mass>0.1</Mass>
+      <Beauty>4</Beauty>
+      <MarketValue>0</MarketValue>
+    </statBases>
+    <graphicData>
+      <texPath>Things/Item/Resource/StarPiece</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <soundInteract>Silver_Drop</soundInteract>
+    <soundDrop>Silver_Drop</soundDrop>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+    <stackLimit>1000</stackLimit>
+
+    <!-- 売買不可 -->
+    <tradeability>None</tradeability>
+  </ThingDef>
+
+</Defs>
