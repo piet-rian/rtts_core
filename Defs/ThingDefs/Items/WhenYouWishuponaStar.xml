@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!-- ほしのかけら `star piece` の使い道を用意しないと貯まる一方なので、本Mod単体でも使い道を用意する -->
+
+  <!-- 星に願いを `When You Wish upon a Star`, ヒーラーシーラム互換 -->
+  <ThingDef ParentName="MechSerumBase">
+    <defName>RTTS_HEALER</defName>
+    <label>When You Wish upon a Star</label>
+    <description>like a healer mech serum.</description>
+    <graphicData>
+      <texPath>Things/Item/Special/wywuas</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+    </graphicData>
+    <stackLimit>10</stackLimit>
+    <statBases>
+      <MarketValue>0</MarketValue>
+      <WorkToMake>50000</WorkToMake>
+    </statBases>
+    <thingCategories>
+      <li>ItemsMisc</li>
+    </thingCategories>
+
+    <!-- 売買不可 -->
+    <tradeability>None</tradeability>
+
+    <comps>
+      <li Class="CompProperties_Usable">
+        <useJob>UseItem</useJob>
+        <useLabel>Use {0_label}</useLabel>
+        <useDuration>600</useDuration>
+      </li>
+      <li Class="CompProperties_UseEffect">
+        <compClass>CompUseEffect_FixWorstHealthCondition</compClass>
+      </li>
+      <li Class="CompProperties_UseEffectPlaySound">
+        <soundOnUsed>MechSerumUsed</soundOnUsed>
+      </li>
+      <li Class="CompProperties_UseEffectDestroySelf" />
+    </comps>
+
+    <thingSetMakerTags />
+    <tradeTags />
+
+    <costList>
+      <!-- 人100体分, 2025-07-04現在の設定だと1体20unitなので2000 -->
+      <RTTS_STAR_PIECE>2000</RTTS_STAR_PIECE>
+    </costList>
+
+    <recipeMaker>
+      <!-- レシピメーカーで一括定義 -->
+      <researchPrerequisites>
+        <li>RTTS_RESEARCH_PROJECT_1T</li>
+        <li>ShipBasics</li>
+      </researchPrerequisites>
+      <workSpeedStat>GeneralLaborSpeed</workSpeedStat>
+      <workSkill>Artistic</workSkill>
+      <effectWorking>Sculpt</effectWorking>
+      <soundWorking>Recipe_Sculpt</soundWorking>
+      <recipeUsers>
+        <li>RTTS_STAR_CIRCLE</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Artistic>15</Artistic>
+      </skillRequirements>
+    </recipeMaker>
+
+  </ThingDef>
+
+
+  <!-- `星に願いを` をアイテムとして使うためのレシピ -->
+  <RecipeDef>
+    <defName>AdministerRTTS_HEALER</defName>
+    <label>administer "When You Wish upon a Star"</label>
+    <description>Administer a "When You Wish upon a Star".</description>
+    <workerClass>Recipe_AdministerUsableItem</workerClass>
+    <jobString>Administering "When You Wish upon a Star".</jobString>
+    <targetsBodyPart>false</targetsBodyPart>
+    <anesthetize>false</anesthetize>
+    <workAmount>600</workAmount>
+    <dontShowIfAnyIngredientMissing>true</dontShowIfAnyIngredientMissing>
+    <surgeryOutcomeEffect IsNull="True" />
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>RTTS_HEALER</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>RTTS_HEALER</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+  </RecipeDef>
+</Defs>
