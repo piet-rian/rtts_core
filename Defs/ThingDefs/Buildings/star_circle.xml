@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <!--
+    * 遺骸の処理手段 としての `star circle`(星堂) を定義する
+    * 星堂は、遺骸を星に還す(`return to a star`)ための作業台
+    * 星に還すことで、`star piece`(星のかけら)を得る
+  -->
+
+  <!--
+    `star circle`のベースとなるThingDef
+    - これを継承して個別のサークルを定義する
+    - ここでは、作業速度係数や描画サイズなどは指定しない
+  -->
+  <ThingDef Name="RTTSSartCircleBase" ParentName="BuildingBase" Abstract="True">
+    <thingClass>Building_WorkTable</thingClass>
+
+    <altitudeLayer>Building</altitudeLayer>
+    <passability>Standable</passability>
+    <hasInteractionCell>True</hasInteractionCell>
+    <surfaceType>Item</surfaceType>
+
+    <!-- RTTSカテゴリにする -->
+    <designationCategory>RTTS_DC_RTTS</designationCategory>
+    <uiOrder>2000</uiOrder>
+
+    <scatterableOnMapGen>false</scatterableOnMapGen>
+    <useHitPoints>false</useHitPoints>
+
+    <graphicData>
+      <texPath>Things/Building/Production/RTTS_STAR_CIRCLE</texPath>
+      <graphicClass>Graphic_Single</graphicClass>
+      <!-- 描画サイズは個別に指定 -->
+    </graphicData>
+
+    <statBases>
+      <WorkToBuild>0</WorkToBuild>
+      <!-- 作業速度係数は個別に指定 -->
+    </statBases>
+
+    <!--
+      ポーンが立って作業する場所(==開いている必要がある箇所)の指定
+      三番目の値が中央(?)からの距離? らしく
+      北向き基準で -2で2セル南、-1で1セル南, 0でNxNの中央が作業エリアとなった
+    -->
+    <interactionCellOffset>(0,0,0)</interactionCellOffset>
+
+    <inspectorTabs>
+      <li>ITab_Bills</li>
+    </inspectorTabs>
+
+    <building>
+      <spawnedConceptLearnOpportunity>BillsTab</spawnedConceptLearnOpportunity>
+      <sowTag>SupportPlantsOnly</sowTag>
+      <canPlaceOverImpassablePlant>false</canPlaceOverImpassablePlant>
+      <ai_chillDestination>false</ai_chillDestination>
+      <wakeDormantPawnsOnConstruction>false</wakeDormantPawnsOnConstruction>
+      <artificialForMeditationPurposes>false</artificialForMeditationPurposes>
+      <buildingTags>
+        <li>Production</li>
+      </buildingTags>
+    </building>
+
+    <!-- ゾーンと重なっても良いとする -->
+    <canOverlapZones>true</canOverlapZones>
+
+    <designationHotKey>Misc1</designationHotKey>
+
+    <!-- 屋根の下はダメという設定 -->
+    <canBeUsedUnderRoof>false</canBeUsedUnderRoof>
+
+    <placeWorkers>
+      <!-- 作業場所(サークル中央)になんか被ってたらNGアラートだす -->
+      <li>PlaceWorker_PreventInteractionSpotOverlap</li>
+      <!-- 屋根の下ダメアラート  -->
+      <li>PlaceWorker_NotUnderRoof</li>
+    </placeWorkers>
+
+  </ThingDef>
+
+  <!-- =================================================================== -->
+
+  <!-- 星堂の実定義 -->
+
+  <ThingDef ParentName="RTTSSartCircleBase">
+    <defName>RTTS_STAR_CIRCLE</defName>
+    <label>star circle</label>
+    <description>star circle</description>
+    <graphicData>
+      <drawSize>(7,7)</drawSize>
+    </graphicData>
+    <size>(7,7)</size>
+    <statBases>
+      <WorkTableWorkSpeedFactor>7.0</WorkTableWorkSpeedFactor>
+    </statBases>
+    <recipes>
+      <!-- TODO: 星に還すレシピ -->
+    </recipes>
+    <researchPrerequisites>
+      <li>RTTS_RESEARCH_PROJECT_1T</li>
+    </researchPrerequisites>
+  </ThingDef>
+
+</Defs>
