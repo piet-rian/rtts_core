@@ -1,0 +1,19 @@
+<Defs>
+  <!--
+    * シナリオ設定や何がしかのアイテムによって研究済みにされることを前提とした研究を追加
+    * 研究XとRimworld本体+DLCの研究の両方が完了することによって、各種追加要素が解禁される方式を取る
+  -->
+
+  <!--
+    テックレベルの情報は `Core\Languages\English\Keyed\Enums.xml` の TechLevel の部分を参照
+  -->
+  <ResearchProjectDef>
+    <defName>RTAS_RESEARCH_PROJECT_1T</defName>
+    <label>Return th a star</label>
+    <description>welcome to this world.</description>
+    <baseCost>7777777</baseCost>
+    <techLevel>Animal</techLevel>
+    <researchViewX>0</researchViewX>
+    <researchViewY>5.4</researchViewY>
+  </ResearchProjectDef>
+</Defs>
