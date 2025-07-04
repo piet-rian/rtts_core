@@ -11,7 +11,7 @@
   <ThingDef ParentName="ResourceBase">
     <defName>RTTS_STAR_PIECE</defName>
     <label>star piece</label>
-    <description>stardust</description><!-- TODO: 文面考え直す -->
+    <description>Obtained by 'returning corpses to a star' at the star circle.</description>
     <statBases>
       <MaxHitPoints>50</MaxHitPoints>
       <Mass>0.1</Mass>

@@ -84,7 +84,7 @@
   <ThingDef ParentName="RTTSSartCircleBase">
     <defName>RTTS_STAR_CIRCLE</defName>
     <label>star circle</label>
-    <description>star circle</description>
+    <description>A workbench for 'returning corpses to a star'. Also used to convert 'Star Piece' into other items.</description>
     <graphicData>
       <drawSize>(7,7)</drawSize>
     </graphicData>

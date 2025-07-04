@@ -6,7 +6,7 @@
   <ThingDef ParentName="MechSerumBase">
     <defName>RTTS_HEALER</defName>
     <label>When You Wish upon a Star</label>
-    <description>like a healer mech serum.</description>
+    <description>A drink made by condensing star pieces. Drinking it heals the body, just like a healer mech serum.</description>
     <graphicData>
       <texPath>Things/Item/Special/wywuas</texPath>
       <graphicClass>Graphic_Single</graphicClass>
