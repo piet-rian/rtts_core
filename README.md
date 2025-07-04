@@ -1,16 +1,19 @@
-# RimworldXMLModTemplate
+# Return to The Star - core
 
-This is the template repository for XML-based mods in RIMWORLD.
-
-see. https://rimworldwiki.com/wiki/Modding_Tutorials/Mod_Folder_Structure
+- 汎用的な遺骸の処理手段を提供することを目的とするModです。また、
+- 普段軽視されがちな芸術スキルが重要になるようにしてあります。
 
 ## MID-SAVE
 
-途中導入および途中除去についての記述
+- 途中追加は
+  - 問題ありません。
+- 途中削除
+  - おそらく問題ないでしょう。
+    - Modで追加したアイテムや建造物が消失するだけだと思われるので、
 
 ## CONFLICT
 
-競合が予想されるmodについての記述
+今のところありません。
 
 ## NOTICE
 
