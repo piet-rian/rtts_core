@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<LanguageData>
+
+  <!-- EN: planetarian -->
+  <RTTS_planetarian_mood.stages.planetarian.label>星の人</RTTS_planetarian_mood.stages.planetarian.label>
+  <!-- EN: Natural bonus from 'planetarian' trait. -->
+  <RTTS_planetarian_mood.stages.planetarian.description>「星の人」特性による自然なボーナス。</RTTS_planetarian_mood.stages.planetarian.description>
+
+</LanguageData>
